@@ -1,4 +1,4 @@
-import React,{Fragment, useEffect, useState, prevState} from 'react';
+import React,{Fragment, useEffect, useState} from 'react';
 import { useParams } from 'react-router-dom';
 import { getMovieDetails, newBooking } from '../../api-helpers/api-helpers';
 import { Button, Box, FormLabel, TextField, Typography } from '@mui/material';
