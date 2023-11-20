@@ -1,4 +1,4 @@
-import React, { useState, prevState } from 'react';
+import React, { useState } from 'react';
 import { Button, Dialog, Typography, Box, FormLabel, TextField, IconButton } from '@mui/material';
 import CloseRoundedIcon from '@mui/icons-material/CloseRounded';
 import { Link } from 'react-router-dom';
@@ -11,7 +11,7 @@ const AuthForm = ({onSubmit,isAdmin}) => {
     });
     const [isSignup, setIsSignup] = useState(false);
     const handleChange=(e)=>{
-        setInputs((prevState)=({
+        setInputs((prevState)=> ({
             ...prevState,
             [e.target.name]: e.target.value,
     }));
